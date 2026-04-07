@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj": {}
+    "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj": {}
   },
   "projects": {
     "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Domain\\Domain.csproj": {
@@ -343,14 +343,14 @@
         }
       }
     },
-    "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj": {
+    "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj",
+        "projectUniqueName": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj",
         "projectName": "Infraestructura",
-        "projectPath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj",
+        "projectPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj",
         "packagesPath": "C:\\Users\\PushoDev\\.nuget\\packages\\",
-        "outputPath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\obj\\",
+        "outputPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

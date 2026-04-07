@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\ApiProyecto\\ApiProyecto.csproj": {}
+    "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\ApiProyecto\\ApiProyecto.csproj": {}
   },
   "projects": {
-    "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\ApiProyecto\\ApiProyecto.csproj": {
+    "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\ApiProyecto\\ApiProyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\ApiProyecto\\ApiProyecto.csproj",
+        "projectUniqueName": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\ApiProyecto\\ApiProyecto.csproj",
         "projectName": "ApiProyecto",
-        "projectPath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\ApiProyecto\\ApiProyecto.csproj",
+        "projectPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\ApiProyecto\\ApiProyecto.csproj",
         "packagesPath": "C:\\Users\\PushoDev\\.nuget\\packages\\",
-        "outputPath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\ApiProyecto\\obj\\",
+        "outputPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\ApiProyecto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,14 +32,14 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj": {
-                "projectPath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj"
+              "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj": {
+                "projectPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj"
               },
               "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Domain\\Domain.csproj": {
                 "projectPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Domain\\Domain.csproj"
               },
-              "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj": {
-                "projectPath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj"
+              "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj": {
+                "projectPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj"
               }
             }
           }
@@ -512,14 +512,14 @@
         }
       }
     },
-    "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj": {
+    "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj",
+        "projectPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\PushoDev\\.nuget\\packages\\",
-        "outputPath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\obj\\",
+        "outputPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -543,8 +543,8 @@
               "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Domain\\Domain.csproj": {
                 "projectPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Domain\\Domain.csproj"
               },
-              "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj": {
-                "projectPath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj"
+              "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj": {
+                "projectPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj"
               }
             }
           }
@@ -1207,14 +1207,14 @@
         }
       }
     },
-    "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj": {
+    "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj",
+        "projectUniqueName": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj",
         "projectName": "Infraestructura",
-        "projectPath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj",
+        "projectPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\Infraestructura.csproj",
         "packagesPath": "C:\\Users\\PushoDev\\.nuget\\packages\\",
-        "outputPath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\obj\\",
+        "outputPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Infraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

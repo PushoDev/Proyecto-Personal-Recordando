@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3TN77Hc4jwE=",
+  "dgSpecHash": "PaUMPYQ/vwg=",
   "success": true,
-  "projectFilePath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj",
+  "projectFilePath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PushoDev\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\PushoDev\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
