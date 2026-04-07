@@ -1,4 +1,9 @@
 
+using Infraestructura.Data;
+using Infraestructura.Repositories;
+using Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
 namespace ApiProyecto
 {
     public class Program
@@ -12,6 +17,13 @@ namespace ApiProyecto
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
+            // Configurar EF Core
+            builder.Services.AddDbContext<RecursoDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            // Configurar repositorios
+            builder.Services.AddScoped<IRecursoRepository, RecursoRepository>();
 
             var app = builder.Build();
 

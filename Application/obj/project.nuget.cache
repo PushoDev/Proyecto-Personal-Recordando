@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ttMNzQO2ncM=",
+  "dgSpecHash": "Kh5tBEpEtGE=",
   "success": true,
-  "projectFilePath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "d:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PushoDev\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.5\\microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg.sha512",
+    "C:\\Users\\PushoDev\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.5\\microsoft.extensions.logging.abstractions.10.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
