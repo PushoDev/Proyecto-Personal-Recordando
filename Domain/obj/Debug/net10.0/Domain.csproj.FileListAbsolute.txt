@@ -10,3 +10,4 @@ D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\refint\Dom
 D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\Domain.pdb
 D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\ref\Domain.dll
 D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\Domain.sourcelink.json
+D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\Domain.csproj.AssemblyReference.cache

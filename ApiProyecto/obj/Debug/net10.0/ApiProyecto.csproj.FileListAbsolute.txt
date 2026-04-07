@@ -167,3 +167,5 @@ D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\bin\Debug\net10.0\Domai
 D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\bin\Debug\net10.0\Infraestructura.pdb
 D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\bin\Debug\net10.0\Application.dll
 D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\bin\Debug\net10.0\Application.pdb
+D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
