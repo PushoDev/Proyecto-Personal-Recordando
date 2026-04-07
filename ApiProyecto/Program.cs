@@ -2,6 +2,8 @@
 using Infraestructura.Data;
 using Infraestructura.Repositories;
 using Domain.Interfaces;
+using Application.Interfaces;
+using Application.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiProyecto
@@ -24,6 +26,16 @@ namespace ApiProyecto
 
             // Configurar repositorios
             builder.Services.AddScoped<IRecursoRepository, RecursoRepository>();
+
+            // Configurar servicios de aplicación
+            builder.Services.AddScoped<IRecursoApplicationService, RecursoApplicationService>();
+            builder.Services.AddScoped<IUrlShortenerService>(sp =>
+                new UrlShortenerApplicationService(
+                    sp.GetRequiredService<IRecursoRepository>(),
+                    sp.GetRequiredService<RecursoDbContext>(),
+                    sp.GetRequiredService<IConfiguration>(),
+                    sp.GetRequiredService<ILogger<UrlShortenerApplicationService>>()
+                ));
 
             var app = builder.Build();
 

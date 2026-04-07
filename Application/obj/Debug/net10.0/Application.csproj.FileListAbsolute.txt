@@ -11,3 +11,8 @@ D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\Appli
 D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\ref\Application.dll
 D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\Application.csproj.AssemblyReference.cache
 D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\Application.sourcelink.json
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\bin\Debug\net10.0\Domain.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\bin\Debug\net10.0\Infraestructura.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\bin\Debug\net10.0\Domain.pdb
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\bin\Debug\net10.0\Infraestructura.pdb
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\Applicat.44B5EDA2.Up2Date
