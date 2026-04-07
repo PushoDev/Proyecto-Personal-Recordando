@@ -403,4 +403,4 @@ Para soporte técnico o preguntas:
 ---
 
 **Desarrollado con ❤️ usando .NET 10.0 y ASP.NET Core**</content>
-<parameter name="filePath">d:\APP_CREATED\source\repos\ProyectoPersonal\README.md
+<parameter name="filePath"> README.md
