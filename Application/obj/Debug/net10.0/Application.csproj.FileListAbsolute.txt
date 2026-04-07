@@ -1,0 +1,11 @@
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\bin\Debug\net10.0\Application.deps.json
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\bin\Debug\net10.0\Application.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\bin\Debug\net10.0\Application.pdb
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\Application.AssemblyInfoInputs.cache
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\Application.AssemblyInfo.cs
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\Application.csproj.CoreCompileInputs.cache
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\Application.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\refint\Application.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\Application.pdb
+D:\APP_CREATED\source\repos\ProyectoPersonal\Application\obj\Debug\net10.0\ref\Application.dll

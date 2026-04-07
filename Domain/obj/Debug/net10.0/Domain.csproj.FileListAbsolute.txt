@@ -1,0 +1,11 @@
+D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\bin\Debug\net10.0\Domain.deps.json
+D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\bin\Debug\net10.0\Domain.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\bin\Debug\net10.0\Domain.pdb
+D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\Domain.AssemblyInfoInputs.cache
+D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\Domain.AssemblyInfo.cs
+D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\Domain.csproj.CoreCompileInputs.cache
+D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\Domain.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\refint\Domain.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\Domain.pdb
+D:\APP_CREATED\source\repos\ProyectoPersonal\Domain\obj\Debug\net10.0\ref\Domain.dll

@@ -1,0 +1,11 @@
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\bin\Debug\net10.0\Infraestructura.deps.json
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\bin\Debug\net10.0\Infraestructura.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\bin\Debug\net10.0\Infraestructura.pdb
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net10.0\Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net10.0\Infraestructura.AssemblyInfoInputs.cache
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net10.0\Infraestructura.AssemblyInfo.cs
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net10.0\Infraestructura.csproj.CoreCompileInputs.cache
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net10.0\Infraestructura.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net10.0\refint\Infraestructura.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net10.0\Infraestructura.pdb
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net10.0\ref\Infraestructura.dll
