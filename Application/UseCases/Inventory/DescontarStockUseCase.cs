@@ -26,11 +26,13 @@ namespace Application.UseCases.Inventory
             if (recurso == null)
                 throw new KeyNotFoundException($"No se encontró el recurso con ID {recursoId}.");
 
+            // Verificar estado crítico antes del descuento
+            bool estabaEnEstadoCritico = recurso.EstaEnEstadoCritico();
+
             // Descontar stock usando lógica de dominio
             recurso.DescontarStock(cantidad);
 
-            // Verificar si está en estado crítico y registrar alerta
-            bool estabaEnEstadoCritico = recurso.EstaEnEstadoCritico();
+            // Verificar estado crítico después del descuento
             bool ahoraEstaEnEstadoCritico = recurso.EstaEnEstadoCritico();
 
             // Si acaba de entrar en estado crítico, podríamos disparar una alerta aquí

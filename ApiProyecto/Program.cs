@@ -67,6 +67,23 @@ namespace ApiProyecto
             // Configurar repositorios
             builder.Services.AddScoped<IRecursoRepository, RecursoRepository>();
 
+            // Registrar servicio de autenticación
+            builder.Services.AddScoped<IAuthService, AuthService>();
+
+            // Configurar CORS para permitir peticiones desde el frontend durante el desarrollo
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend", policy =>
+                {
+                    var frontendUrl = builder.Configuration["Frontend:DevUrl"] ?? "http://localhost:3000";
+                    // Allow common dev origins (Vite default port in this project is 11840)
+                    policy.WithOrigins(frontendUrl, "http://localhost:11840")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod()
+                          .AllowCredentials();
+                });
+            });
+
             // Configurar servicios de aplicación
             builder.Services.AddScoped<IRecursoApplicationService, RecursoApplicationService>();
             builder.Services.AddScoped<IUrlShortenerService>(sp =>
@@ -87,6 +104,9 @@ namespace ApiProyecto
             }
 
             app.UseHttpsRedirection();
+
+            // Habilitar CORS usando la política configurada
+            app.UseCors("AllowFrontend");
 
             app.UseAuthentication();
             app.UseAuthorization();
