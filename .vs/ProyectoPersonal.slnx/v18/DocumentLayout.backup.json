@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E949B489-9907-4CE7-8856-76C36F0C8A4B}|Domain\\Domain.csproj|d:\\app_created\\source\\repos\\proyectopersonal\\domain\\interfaces\\irecursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E949B489-9907-4CE7-8856-76C36F0C8A4B}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\irecursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E949B489-9907-4CE7-8856-76C36F0C8A4B}|Domain\\Domain.csproj|d:\\app_created\\source\\repos\\proyectopersonal\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E949B489-9907-4CE7-8856-76C36F0C8A4B}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E949B489-9907-4CE7-8856-76C36F0C8A4B}|Domain\\Domain.csproj|d:\\app_created\\source\\repos\\proyectopersonal\\domain\\entidades\\recurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E949B489-9907-4CE7-8856-76C36F0C8A4B}|Domain\\Domain.csproj|solutionrelative:domain\\entidades\\recurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,34 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IRecursoRepository.cs",
-              "DocumentMoniker": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Domain\\Interfaces\\IRecursoRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Interfaces\\IRecursoRepository.cs",
-              "ToolTip": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Domain\\Interfaces\\IRecursoRepository.cs",
-              "RelativeToolTip": "Domain\\Interfaces\\IRecursoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T19:40:35.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Domain",
-              "DocumentMoniker": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Domain\\Domain.csproj",
-              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
-              "ToolTip": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Domain\\Domain.csproj",
-              "RelativeToolTip": "Domain\\Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-07T19:39:41.85Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -61,19 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Recurso.cs",
-              "DocumentMoniker": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Domain\\Entidades\\Recurso.cs",
-              "RelativeDocumentMoniker": "Domain\\Entidades\\Recurso.cs",
-              "ToolTip": "D:\\APP_CREATED\\source\\repos\\ProyectoPersonal\\Domain\\Entidades\\Recurso.cs",
-              "RelativeToolTip": "Domain\\Entidades\\Recurso.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T19:33:25.974Z",
-              "EditorCaption": ""
             }
           ]
         }
