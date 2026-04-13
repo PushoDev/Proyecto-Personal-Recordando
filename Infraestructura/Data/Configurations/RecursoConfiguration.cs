@@ -16,6 +16,10 @@ namespace Infraestructura.Data.Configurations
                 .IsRequired()
                 .HasMaxLength(200);
 
+            builder.Property(r => r.Descripcion)
+                .HasMaxLength(1000);
+
+            // Campos de inventario
             builder.Property(r => r.Stock)
                 .IsRequired();
 
@@ -32,13 +36,32 @@ namespace Infraestructura.Data.Configurations
                 .IsRequired()
                 .HasDefaultValue(0);
 
-            // Índice único para CodigoCorto (para búsquedas rápidas)
+            // Campos de tarea
+            builder.Property(r => r.FechaCreacion)
+                .IsRequired();
+
+            builder.Property(r => r.FechaVencimiento);
+
+            builder.Property(r => r.Prioridad)
+                .IsRequired()
+                .HasDefaultValue(1);
+
+            builder.Property(r => r.Estado)
+                .IsRequired()
+                .HasDefaultValue(0);
+
+            // Índice único para CodigoCorto
             builder.HasIndex(r => r.CodigoCorto)
                 .IsUnique()
                 .HasFilter("[CodigoCorto] IS NOT NULL");
 
             // Índice para búsquedas por nombre
             builder.HasIndex(r => r.Nombre);
+
+            // Índice para filtros de tareas
+            builder.HasIndex(r => r.Estado);
+            builder.HasIndex(r => r.Prioridad);
+            builder.HasIndex(r => r.FechaVencimiento);
         }
     }
 }

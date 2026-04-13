@@ -1,0 +1,54 @@
+﻿using Application.DTOs;
+using Domain.Interfaces;
+
+namespace Application.UseCases.Inventory
+{
+    public class DescontarStockUseCase
+    {
+        private readonly IRecursoRepository _recursoRepository;
+
+        public DescontarStockUseCase(IRecursoRepository recursoRepository)
+        {
+            _recursoRepository = recursoRepository ?? throw new ArgumentNullException(nameof(recursoRepository));
+        }
+
+        public async Task<RecursoDTO> ExecuteAsync(int recursoId, int cantidad)
+        {
+            // Validar entrada
+            if (recursoId <= 0)
+                throw new ArgumentException("El ID del recurso debe ser positivo.", nameof(recursoId));
+
+            if (cantidad <= 0)
+                throw new ArgumentException("La cantidad debe ser mayor a cero.", nameof(cantidad));
+
+            // Obtener recurso
+            var recurso = await _recursoRepository.GetByIdAsync(recursoId);
+            if (recurso == null)
+                throw new KeyNotFoundException($"No se encontró el recurso con ID {recursoId}.");
+
+            // Descontar stock usando lógica de dominio
+            recurso.DescontarStock(cantidad);
+
+            // Verificar si está en estado crítico y registrar alerta
+            bool estabaEnEstadoCritico = recurso.EstaEnEstadoCritico();
+            bool ahoraEstaEnEstadoCritico = recurso.EstaEnEstadoCritico();
+
+            // Si acaba de entrar en estado crítico, podríamos disparar una alerta aquí
+            // Por ahora, solo guardamos el cambio
+            await _recursoRepository.UpdateAsync(recurso);
+
+            // Retornar DTO con información actualizada
+            return new RecursoDTO
+            {
+                Id = recurso.Id,
+                Nombre = recurso.Nombre,
+                Stock = recurso.Stock,
+                UmbralMinimo = recurso.UmbralMinimo,
+                UrlOriginal = recurso.UrlOriginal,
+                CodigoCorto = recurso.CodigoCorto,
+                Clicks = recurso.Clicks,
+                EstaEnEstadoCritico = recurso.EstaEnEstadoCritico()
+            };
+        }
+    }
+}

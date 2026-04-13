@@ -1,0 +1,2 @@
+﻿# Frontend production environment - set to your production API URL
+REACT_APP_API_URL=https://api.tu-dominio.com

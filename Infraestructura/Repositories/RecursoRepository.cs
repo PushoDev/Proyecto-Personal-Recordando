@@ -14,6 +14,11 @@ namespace Infraestructura.Repositories
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
+        public async Task<List<Recurso>> GetAllAsync()
+        {
+            return await _context.Recursos.ToListAsync();
+        }
+
         public async Task<Recurso?> GetByIdAsync(int id)
         {
             return await _context.Recursos
@@ -45,6 +50,16 @@ namespace Infraestructura.Repositories
 
             _context.Recursos.Update(recurso);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            var recurso = await _context.Recursos.FindAsync(id);
+            if (recurso != null)
+            {
+                _context.Recursos.Remove(recurso);
+                await _context.SaveChangesAsync();
+            }
         }
     }
 }

@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Proyecto_Inicial",
+    "Projects": [
+      {
+        "Path": "ApiProyecto\\ApiProyecto.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "Frontend\\frontend.esproj",
+        "Action": "Start",
+        "DebugTarget": "localhost (Chrome)"
+      }
+    ]
+  }
+]

@@ -169,4 +169,5 @@ D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\bin\Debug\net10.0\Appli
 D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\bin\Debug\net10.0\Application.pdb
 D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\bin\Debug\net10.0\Yarp.ReverseProxy.dll
+D:\APP_CREATED\source\repos\ProyectoPersonal\ApiProyecto\bin\Debug\net10.0\System.IO.Hashing.dll

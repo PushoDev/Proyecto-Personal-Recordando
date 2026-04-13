@@ -1,0 +1,4 @@
+﻿# Example environment file for the React frontend
+# Copy this to `.env` in your frontend project root and update the URL
+# Points to the API base URL (no trailing slash). Default matches ApiProyecto launchSettings HTTP URL.
+REACT_APP_API_URL=http://localhost:5241

@@ -1,0 +1,20 @@
+﻿# Example environment variables for the backend (ApiProyecto)
+# Copy values into your environment or use User Secrets for local development.
+
+# Connection string name used by configuration
+ConnectionStrings__DefaultConnection=Server=(localdb)\\mssqllocaldb;Database=ProyectoPersonalDb;Trusted_Connection=True;
+
+# JWT settings
+Jwt__Key=SuperSecretKey123456789012345678901234567890
+Jwt__Issuer=ProyectoPersonal
+Jwt__Audience=ProyectoPersonalUsers
+Jwt__ExpiryInMinutes=60
+Jwt__RefreshTokenExpiryInDays=30
+
+# Frontend dev URL for CORS
+# By default the frontend dev server runs on port 3000. If you use the React project in this solution,
+# the dev server typically runs at http://localhost:3000
+Frontend__DevUrl=http://localhost:3000
+
+# The API base URL used by the React frontend example (matches Api launchSettings http profile)
+Frontend__ApiUrl=http://localhost:5241

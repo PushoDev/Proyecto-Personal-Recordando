@@ -1,0 +1,21 @@
+﻿{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=ProyectoPersonalDb;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+  "Jwt": {
+    "Key": "SuperSecretKey123456789012345678901234567890",
+    "Issuer": "ProyectoPersonal",
+    "Audience": "ProyectoPersonalUsers",
+    "ExpiryInMinutes": "60",
+    "RefreshTokenExpiryInDays": "30"
+  },
+  "Frontend": {
+    "DevUrl": "http://localhost:3000"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  }
+}
