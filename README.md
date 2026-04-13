@@ -1,123 +1,197 @@
-# Proyecto Personal - Backend API
+# Proyecto Personal
 
-[![.NET](https://img.shields.io/badge/.NET-10.0-blue.svg)](https://dotnet.microsoft.com/)
-[![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-10.0-green.svg)](https://dotnet.microsoft.com/apps/aspnet)
-[![Entity Framework](https://img.shields.io/badge/Entity%20Framework-10.0-purple.svg)](https://learn.microsoft.com/ef/)
-[![SQL Server](https://img.shields.io/badge/SQL%20Server-Express-red.svg)](https://www.microsoft.com/sql-server)
-[![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-yellow.svg)](https://swagger.io/)
+> Full-stack enterprise application with .NET 10.0 backend and React + MUI frontend.
 
-## Resumen Ejecutivo
+[![.NET](https://img.shields.io/badge/.NET-10.0-blue?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com/)
+[![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-10.0-green?style=flat-square&logo=microsoft)](https://dotnet.microsoft.com/apps/aspnet)
+[![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178c6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![MUI](https://img.shields.io/badge/MUI-9.0-007fff?style=flat-square&logo=mui)](https://mui.com/)
+[![SQL Server](https://img.shields.io/badge/SQL%20Server-Express-red?style=flat-square&logo=microsoft)](https://www.microsoft.com/sql-server)
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 
-Proyecto Personal es un backend ASP.NET Core Web API construido para demostrar una solución empresarial moderna con:
+## Overview
 
-- Autenticación JWT profesional con ASP.NET Core Identity.
-- Gestión de inventario con control de stock y alertas de umbral mínimo.
-- Acortador de URLs con registro de clicks y métricas de uso.
-- Arquitectura limpia escalable para integración con clientes web o móviles.
+Proyecto Personal is a modern full-stack application demonstrating enterprise-grade architecture with Clean Architecture principles. It features secure authentication, inventory management with stock threshold alerts, and a URL shortener with click analytics.
 
-Esta presentación está orientada a mostrar una implementación práctica de API segura, documentada y mantenible, lista para evaluación técnica.
+## Features
 
-## Descripción
+### Authentication System
+- JWT-based authentication with access and refresh tokens
+- ASP.NET Core Identity integration
+- Secure password hashing and validation
+- Token refresh and revocation mechanisms
 
-Backend ASP.NET Core Web API diseñado para presentar una solución empresarial con:
+### Inventory Management
+- Stock control with real-time tracking
+- Minimum threshold alerts for critical stock levels
+- Stock deduction with validation
+- Prevention of negative stock transactions
 
-- Autenticación y autorización profesional basada en JWT.
-- Gestión de inventario con control de stock y umbral mínimo.
-- Acortador de URLs con seguimiento de clicks y métricas.
-- Arquitectura limpia con separación de capas.
+### URL Shortener
+- Custom short code generation
+- Click tracking and analytics
+- High-performance statistics queries using Dapper
+- Automatic redirection with click registration
 
-Esta solución está construida para ser una prueba de concepto sólida y documentada, adecuada para una presentación de estilo Microsoft.
+## Technology Stack
 
-## Tabla de Contenidos
+### Backend
+| Component | Technology |
+|-----------|------------|
+| Framework | ASP.NET Core 10.0 |
+| Language | C# 12 |
+| ORM | Entity Framework Core 10.0 |
+| Query Performance | Dapper 2.1.72 |
+| Authentication | JWT Bearer Tokens |
+| Database | SQL Server Express |
+| API Documentation | Swagger/OpenAPI |
 
-- [Características](#-características)
-- [Tecnologías](#-tecnologías)
-- [Prerrequisitos](#-prerrequisitos)
-- [Instalación](#-instalación)
-- [Configuración](#-configuración)
-- [Uso](#-uso)
-- [Autenticación](#-autenticación)
-- [Arquitectura](#-arquitectura)
-- [Base de Datos](#-base-de-datos)
-- [Testing](#-testing)
-- [Contribuir](#-contribuir)
-- [Licencia](#-licencia)
+### Frontend
+| Component | Technology |
+|-----------|------------|
+| Framework | React 19 |
+| Language | TypeScript 6.0 |
+| Build Tool | Vite 8.0 |
+| UI Library | Material-UI 9.0 |
+| Routing | React Router 7 |
+| Styling | Styled Components 6 |
 
-## ✨ Características
+## Getting Started
 
-### Gestión de Inventario
-- Control de stock de recursos.
-- Validación de descuentos y transacciones de stock.
-- Alertas de stock crítico cuando se alcanza el umbral mínimo.
-- Prevención de stock negativo.
+### Prerequisites
 
-### Acortador de URLs
-- Generación de enlaces cortos únicos.
-- Redirección automática a la URL original.
-- Registro de clicks y seguimiento de uso.
-- Consultas de métricas de alto rendimiento.
+- [.NET 10.0 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
+- [SQL Server Express](https://www.microsoft.com/sql-server/sql-server-downloads)
+- [Node.js 18+](https://nodejs.org/) (for frontend)
+- [Git](https://git-scm.com/)
 
-### Autenticación y Seguridad
-- Implementación de ASP.NET Core Identity.
-- Tokens JWT firmados y verificados.
-- Refresh tokens para renovar sesión de manera segura.
-- Rutas protegidas con políticas de autorización.
+### Installation
 
-### Calidad Técnica
-- Arquitectura limpia (Clean Architecture).
-- API RESTful con Swagger/OpenAPI.
-- Persistencia con Entity Framework Core.
-- Consultas de alto rendimiento con Dapper.
-- Inyección de dependencias y servicios desacoplados.
-- Manejo de errores y validación estructurada.
-
-## 🛠️ Tecnologías
-
-- **.NET 10.0**
-- **ASP.NET Core 10.0**
-- **C# 12**
-- **Entity Framework Core 10.0**
-- **SQL Server Express**
-- **Dapper 2.1.72**
-- **Swashbuckle.AspNetCore 10.1.7**
-- **Microsoft.IdentityModel.Tokens**
-
-## 📋 Prerrequisitos
-
-### Software requerido
-- **.NET 10.0 SDK**
-- **SQL Server Express**
-- **Git**
-
-### Verificación
-
-```powershell
-dotnet --version
-Get-Service -Name "MSSQL$SQLEXPRESS"
-```
-
-## 🚀 Instalación
+1. **Clone the repository**
 
 ```powershell
 git clone https://github.com/PushoDev/Proyecto-Personal-Recordando.git
 cd Proyecto-Personal-Recordando
+```
+
+2. **Restore and build the backend**
+
+```powershell
 dotnet restore ProyectoPersonal.slnx
 dotnet build ProyectoPersonal.slnx
 ```
 
-## ⚙️ Configuración
+3. **Configure the database connection**
 
-### Connection String
-
-En `ApiProyecto/appsettings.json`:
+Update `ApiProyecto/appsettings.json` with your SQL Server connection string:
 
 ```json
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=.\\SQLEXPRESS;Database=ProyectoPersonalDb;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true"
-  },
+  }
+}
+```
+
+4. **Run database migrations**
+
+```powershell
+dotnet ef database update --project Infraestructura --startup-project ApiProyecto
+```
+
+5. **Start the backend API**
+
+```powershell
+cd ApiProyecto
+dotnet run
+```
+
+The API will be available at `http://localhost:5241`
+
+6. **Install and start the frontend**
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend will be available at `http://localhost:5173`
+
+## Architecture
+
+The solution follows Clean Architecture principles with four distinct layers:
+
+```
+ProyectoPersonal/
+├── ApiProyecto/           # Presentation Layer
+│   ├── Controllers/       # API endpoints
+│   ├── Program.cs        # Application entry point
+│   └── appsettings.json  # Configuration
+├── Application/           # Business Logic Layer
+│   ├── Services/         # Use cases and business orchestration
+│   └── DTOs/             # Data transfer objects
+├── Domain/                # Domain Layer
+│   ├── Entities/         # Business entities
+│   └── Interfaces/       # Repository contracts
+└── Infraestructura/       # Data Access Layer
+    ├── Data/              # EF Core DbContext
+    ├── Repositories/      # Repository implementations
+    └── Migrations/        # Database migrations
+```
+
+## Screenshots
+
+### Authentication Interface
+
+![Authentication](imgs/auth.png)
+
+### Dashboard
+
+![Dashboard](imgs/dashboard.png)
+
+## API Documentation
+
+### Authentication Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/auth/register` | Register a new user |
+| POST | `/api/auth/login` | Authenticate user |
+| POST | `/api/auth/refresh` | Refresh access token |
+| POST | `/api/auth/revoke` | Revoke refresh token |
+
+### Resource Management
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/recursos` | List all resources |
+| GET | `/api/recursos/{id}` | Get resource by ID |
+| PUT | `/api/recursos/{id}/stock` | Update stock quantity |
+
+### URL Shortener
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/urlshortener/shorten` | Create short URL |
+| GET | `/api/urlshortener/{code}` | Redirect to original URL |
+| GET | `/api/urlshortener/{code}/stats` | Get click statistics |
+
+### Swagger UI
+
+Access interactive API documentation at: `http://localhost:5241/swagger`
+
+## Configuration
+
+### JWT Settings
+
+Configure JWT parameters in `ApiProyecto/appsettings.json`:
+
+```json
+{
   "Jwt": {
-    "Key": "SuperSecretKey12345678901234567890123456789012345678901234567890",
+    "Key": "YourSecretKey...",
     "Issuer": "ProyectoPersonal",
     "Audience": "ProyectoPersonalUsers",
     "ExpiryInMinutes": 60,
@@ -126,192 +200,38 @@ En `ApiProyecto/appsettings.json`:
 }
 ```
 
-### Puertos y entorno
+### Environment Ports
 
-Por defecto la API se inicia en `http://localhost:5241`.
+| Service | Default Port |
+|---------|--------------|
+| Backend API | 5241 |
+| Frontend Dev Server | 5173 |
+| Swagger UI | 5241/swagger |
 
-Para cambiar el puerto o el entorno, edite `ApiProyecto/Properties/launchSettings.json`.
-
-## 🎯 Uso
-
-### Ejecutar la API
-
-```powershell
-cd ApiProyecto
-dotnet run
-```
-
-### Acceder a la documentación
-
-- **Swagger**: `http://localhost:5241/swagger`
-- **Health check**: `http://localhost:5241/weatherforecast`
-
-## 🔐 Autenticación
-
-Esta API usa JWT para autenticación y ASP.NET Core Identity para la gestión de usuarios.
-
-### Endpoints principales
-
-- `POST /api/auth/register`
-  - Registra un usuario nuevo.
-  - Campos: `email`, `password`, `confirmPassword`, `nombreCompleto`.
-
-- `POST /api/auth/login`
-  - Autentica con correo y contraseña.
-  - Devuelve token JWT y refresh token.
-
-- `POST /api/auth/refresh`
-  - Renueva el access token con un refresh token válido.
-
-- `POST /api/auth/revoke`
-  - Revoca un refresh token.
-
-### Ejemplo: registro de usuario
-
-```bash
-curl -X POST "http://localhost:5241/api/auth/register" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "email": "test@example.com",
-    "password": "Test123!",
-    "confirmPassword": "Test123!",
-    "nombreCompleto": "Usuario Test"
-  }'
-```
-
-### Ejemplo: login
-
-```bash
-curl -X POST "http://localhost:5241/api/auth/login" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "email": "test@example.com",
-    "password": "Test123!"
-  }'
-```
-
-### Ejemplo: refresh token
-
-```bash
-curl -X POST "http://localhost:5241/api/auth/refresh" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "refreshToken": "<refresh_token_aqui>"
-  }'
-```
-
-### Ejemplo: revocar token
-
-```bash
-curl -X POST "http://localhost:5241/api/auth/revoke" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "refreshToken": "<refresh_token_aqui>"
-  }'
-```
-
-### Respuesta de ejemplo al iniciar sesión
-
-```json
-{
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-  "refreshToken": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-  "expiration": "2026-04-07T15:30:00Z",
-  "user": {
-    "id": "12345",
-    "email": "test@example.com",
-    "nombreCompleto": "Usuario Test",
-    "activo": true,
-    "fechaRegistro": "2026-04-07T14:00:00Z"
-  }
-}
-```
-
-## 📦 API Reference
-
-### Gestión de Inventario
-
-#### Obtener recurso
-
-```http
-GET /api/recursos/{id}
-```
-
-#### Descontar stock
-
-```http
-PUT /api/recursos/{id}/stock
-Content-Type: application/json
-
-{
-  "cantidad": 5
-}
-```
-
-### Acortador de URLs
-
-#### Crear URL corta
-
-```http
-POST /api/urlshortener/shorten
-Content-Type: application/json
-
-{
-  "urlOriginal": "https://www.ejemplo.com/pagina-larga",
-  "nombre": "Página de Ejemplo",
-  "stockInicial": 100,
-  "umbralMinimo": 10
-}
-```
-
-#### Redirigir a URL original
-
-```http
-GET /api/urlshortener/{codigoCorto}
-```
-
-## 🏗️ Arquitectura
-
-Este repositorio está estructurado con las siguientes capas:
+## Project Structure (Frontend)
 
 ```
-ProyectoPersonal/
-├─ ApiProyecto/          # Capa de presentación y API
-├─ Application/          # Lógica de aplicación y servicios
-├─ Domain/               # Entidades de dominio y contratos
-└─ Infraestructura/      # Persistencia y repositorios
+frontend/src/
+├── api/           # API client configuration
+├── components/    # Reusable React components
+├── context/       # React context providers
+├── pages/         # Route page components
+├── types/         # TypeScript type definitions
+└── App.tsx        # Main application component
 ```
 
-### Ventajas de esta arquitectura
+## Contributing
 
-- Separación de responsabilidades.
-- Mejor mantenibilidad.
-- Más facilidad para pruebas.
-- Menor acoplamiento entre capas.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 🧱 Base de Datos
+## License
 
-Generación de migraciones y actualización de DB:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```powershell
-dotnet ef migrations add InitialIdentity --project Infraestructura --startup-project ApiProyecto
-dotnet ef database update --project Infraestructura --startup-project ApiProyecto
-```
+---
 
-## 🧪 Testing
-
-Actualmente no existe un proyecto de pruebas independiente, pero la solución está diseñada para admitir:
-
-- pruebas unitarias de servicios en `Application`
-- pruebas de integración en `ApiProyecto`
-- pruebas de repositorios en `Infraestructura`
-
-## 🤝 Contribuir
-
-- Abrir issues para errores o mejoras.
-- Enviar pull requests con cambios claros.
-- Mantener la separación de capas.
-
-## 📄 Licencia
-
-Este repositorio no incluye una licencia explícita. Agrega un archivo `LICENSE` si deseas publicar bajo términos oficiales.
+**Built with .NET 10.0 and React 19**
