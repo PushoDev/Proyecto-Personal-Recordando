@@ -1,6 +1,6 @@
 # Proyecto Personal
 
-> Full-stack enterprise application with .NET 10.0 backend and React + MUI frontend.
+> Full-stack application with .NET 10.0 backend and React + MUI frontend.
 
 [![.NET](https://img.shields.io/badge/.NET-10.0-blue?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com/)
 [![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-10.0-green?style=flat-square&logo=microsoft)](https://dotnet.microsoft.com/apps/aspnet)
@@ -12,27 +12,30 @@
 
 ## Overview
 
-Proyecto Personal is a modern full-stack application demonstrating enterprise-grade architecture with Clean Architecture principles. It features secure authentication, inventory management with stock threshold alerts, and a URL shortener with click analytics.
+Full-stack application with Clean Architecture demonstrating:
+- **Task Manager (TODO)**: Task management with priorities, due dates, and status tracking
+- **URL Shortener**: Short URL generation with click tracking and analytics
+- **Authentication**: JWT-based auth with refresh tokens
 
 ## Features
 
-### Authentication System
-- JWT-based authentication with access and refresh tokens
-- ASP.NET Core Identity integration
-- Secure password hashing and validation
-- Token refresh and revocation mechanisms
-
-### Inventory Management
-- Stock control with real-time tracking
-- Minimum threshold alerts for critical stock levels
-- Stock deduction with validation
-- Prevention of negative stock transactions
+### Task Manager
+- Create, edit, and delete tasks
+- Priority levels (Low, Medium, High)
+- Due date tracking
+- Status management (Pending, In Progress, Completed)
+- Overdue and critical task detection
 
 ### URL Shortener
 - Custom short code generation
 - Click tracking and analytics
 - High-performance statistics queries using Dapper
 - Automatic redirection with click registration
+
+### Authentication
+- JWT-based authentication with access and refresh tokens
+- Secure password hashing
+- Token refresh and revocation
 
 ## Technology Stack
 
@@ -55,7 +58,6 @@ Proyecto Personal is a modern full-stack application demonstrating enterprise-gr
 | Build Tool | Vite 8.0 |
 | UI Library | Material-UI 9.0 |
 | Routing | React Router 7 |
-| Styling | Styled Components 6 |
 
 ## Getting Started
 
@@ -75,16 +77,16 @@ git clone https://github.com/PushoDev/Proyecto-Personal-Recordando.git
 cd Proyecto-Personal-Recordando
 ```
 
-2. **Restore and build the backend**
+2. **Restore and build**
 
 ```powershell
 dotnet restore ProyectoPersonal.slnx
 dotnet build ProyectoPersonal.slnx
 ```
 
-3. **Configure the database connection**
+3. **Configure database**
 
-Update `ApiProyecto/appsettings.json` with your SQL Server connection string:
+Update `ApiProyecto/appsettings.json`:
 
 ```json
 {
@@ -94,22 +96,22 @@ Update `ApiProyecto/appsettings.json` with your SQL Server connection string:
 }
 ```
 
-4. **Run database migrations**
+4. **Run migrations**
 
 ```powershell
 dotnet ef database update --project Infraestructura --startup-project ApiProyecto
 ```
 
-5. **Start the backend API**
+5. **Start backend**
 
 ```powershell
 cd ApiProyecto
 dotnet run
 ```
 
-The API will be available at `http://localhost:5241`
+API: `http://localhost:5241`
 
-6. **Install and start the frontend**
+6. **Start frontend**
 
 ```powershell
 cd frontend
@@ -117,121 +119,49 @@ npm install
 npm run dev
 ```
 
-The frontend will be available at `http://localhost:5173`
+Frontend: `http://localhost:5173`
 
 ## Architecture
 
-The solution follows Clean Architecture principles with four distinct layers:
+Clean Architecture with 4 layers:
 
 ```
 ProyectoPersonal/
-├── ApiProyecto/           # Presentation Layer
-│   ├── Controllers/       # API endpoints
-│   ├── Program.cs        # Application entry point
-│   └── appsettings.json  # Configuration
-├── Application/           # Business Logic Layer
-│   ├── Services/         # Use cases and business orchestration
-│   └── DTOs/             # Data transfer objects
-├── Domain/                # Domain Layer
-│   ├── Entities/         # Business entities
-│   └── Interfaces/       # Repository contracts
-└── Infraestructura/       # Data Access Layer
-    ├── Data/              # EF Core DbContext
-    ├── Repositories/      # Repository implementations
-    └── Migrations/        # Database migrations
+├── ApiProyecto/           # Controllers, Program.cs, Configuration
+├── Application/           # Use cases, Services, DTOs
+├── Domain/                 # Entities, Interfaces
+└── Infraestructura/        # EF Core, Repositories, Migrations
 ```
 
-## Screenshots
+## API Endpoints
 
-### Authentication Interface
-
-![Authentication](imgs/auth.png)
-
-### Dashboard
-
-![Dashboard](imgs/dashboard.png)
-
-## API Documentation
-
-### Authentication Endpoints
-
+### Auth
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| POST | `/api/auth/register` | Register a new user |
-| POST | `/api/auth/login` | Authenticate user |
-| POST | `/api/auth/refresh` | Refresh access token |
-| POST | `/api/auth/revoke` | Revoke refresh token |
+| POST | `/api/auth/register` | Register user |
+| POST | `/api/auth/login` | Login |
+| POST | `/api/auth/refresh` | Refresh token |
+| POST | `/api/auth/revoke` | Revoke token |
 
-### Resource Management
-
+### Tasks
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/recursos` | List all resources |
-| GET | `/api/recursos/{id}` | Get resource by ID |
-| PUT | `/api/recursos/{id}/stock` | Update stock quantity |
+| GET | `/api/recursos` | List tasks |
+| GET | `/api/recursos/{id}` | Get task |
+| POST | `/api/recursos` | Create task |
+| PUT | `/api/recursos/{id}` | Update task |
+| DELETE | `/api/recursos/{id}` | Delete task |
+| PUT | `/api/recursos/{id}/stock` | Update stock |
 
 ### URL Shortener
-
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST | `/api/urlshortener/shorten` | Create short URL |
-| GET | `/api/urlshortener/{code}` | Redirect to original URL |
-| GET | `/api/urlshortener/{code}/stats` | Get click statistics |
+| GET | `/api/urlshortener/{code}` | Redirect |
+| GET | `/api/urlshortener/{code}/stats` | Statistics |
 
-### Swagger UI
-
-Access interactive API documentation at: `http://localhost:5241/swagger`
-
-## Configuration
-
-### JWT Settings
-
-Configure JWT parameters in `ApiProyecto/appsettings.json`:
-
-```json
-{
-  "Jwt": {
-    "Key": "YourSecretKey...",
-    "Issuer": "ProyectoPersonal",
-    "Audience": "ProyectoPersonalUsers",
-    "ExpiryInMinutes": 60,
-    "RefreshTokenExpiryInDays": 7
-  }
-}
-```
-
-### Environment Ports
-
-| Service | Default Port |
-|---------|--------------|
-| Backend API | 5241 |
-| Frontend Dev Server | 5173 |
-| Swagger UI | 5241/swagger |
-
-## Project Structure (Frontend)
-
-```
-frontend/src/
-├── api/           # API client configuration
-├── components/    # Reusable React components
-├── context/       # React context providers
-├── pages/         # Route page components
-├── types/         # TypeScript type definitions
-└── App.tsx        # Main application component
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Swagger: `http://localhost:5241/swagger`
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-**Built with .NET 10.0 and React 19**
+MIT License
