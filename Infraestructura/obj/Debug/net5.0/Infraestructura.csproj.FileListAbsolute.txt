@@ -1,0 +1,5 @@
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net5.0\Infraestructura.csproj.AssemblyReference.cache
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net5.0\Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net5.0\Infraestructura.AssemblyInfoInputs.cache
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net5.0\Infraestructura.AssemblyInfo.cs
+D:\APP_CREATED\source\repos\ProyectoPersonal\Infraestructura\obj\Debug\net5.0\Infraestructura.csproj.CoreCompileInputs.cache
