@@ -26,12 +26,17 @@ namespace Application.UseCases.Inventory
             {
                 Id = recurso.Id,
                 Nombre = recurso.Nombre,
+                Descripcion = recurso.Descripcion,
                 Stock = recurso.Stock,
                 UmbralMinimo = recurso.UmbralMinimo,
                 UrlOriginal = recurso.UrlOriginal,
                 CodigoCorto = recurso.CodigoCorto,
                 Clicks = recurso.Clicks,
-                EstaEnEstadoCritico = recurso.EstaEnEstadoCritico()
+                EstaEnEstadoCritico = recurso.EstaEnEstadoCritico(),
+                FechaCreacion = recurso.FechaCreacion,
+                FechaVencimiento = recurso.FechaVencimiento,
+                Prioridad = recurso.Prioridad,
+                Estado = recurso.Estado
             };
         }
     }

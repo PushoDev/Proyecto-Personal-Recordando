@@ -2,6 +2,11 @@ import { RecursoDTO, CreateRecursoRequest } from '../types/inventario';
 
 const API_URL = '/api/recursos';
 
+const getAuthHeaders = () => {
+  const token = localStorage.getItem('token');
+  return token ? { 'Authorization': `Bearer ${token}` } : {};
+};
+
 const handleResponse = async (response: Response) => {
   const text = await response.text();
   let errorMessage = '';
@@ -22,19 +27,19 @@ const handleResponse = async (response: Response) => {
 
 export const inventarioApi = {
   getAll: async (): Promise<RecursoDTO[]> => {
-    const response = await fetch(API_URL);
+    const response = await fetch(API_URL, { headers: { ...getAuthHeaders() } });
     return handleResponse(response);
   },
 
   getById: async (id: number): Promise<RecursoDTO> => {
-    const response = await fetch(`${API_URL}/${id}`);
+    const response = await fetch(`${API_URL}/${id}`, { headers: { ...getAuthHeaders() } });
     return handleResponse(response);
   },
 
   create: async (data: CreateRecursoRequest): Promise<RecursoDTO> => {
     const response = await fetch(API_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
       body: JSON.stringify(data),
     });
     return handleResponse(response);
@@ -43,7 +48,7 @@ export const inventarioApi = {
   update: async (id: number, data: CreateRecursoRequest): Promise<RecursoDTO> => {
     const response = await fetch(`${API_URL}/${id}`, {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
       body: JSON.stringify(data),
     });
     return handleResponse(response);
@@ -52,6 +57,7 @@ export const inventarioApi = {
   delete: async (id: number): Promise<void> => {
     const response = await fetch(`${API_URL}/${id}`, {
       method: 'DELETE',
+      headers: { ...getAuthHeaders() },
     });
     if (!response.ok) {
       const text = await response.text();
@@ -62,7 +68,7 @@ export const inventarioApi = {
   descontarStock: async (id: number, cantidad: number): Promise<RecursoDTO> => {
     const response = await fetch(`${API_URL}/${id}/stock/descontar`, {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
       body: JSON.stringify({ cantidad }),
     });
     return handleResponse(response);
@@ -71,7 +77,7 @@ export const inventarioApi = {
   agregarStock: async (id: number, cantidad: number): Promise<RecursoDTO> => {
     const response = await fetch(`${API_URL}/${id}/stock/agregar`, {
       method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
       body: JSON.stringify({ cantidad }),
     });
     return handleResponse(response);

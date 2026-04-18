@@ -1,3 +1,5 @@
+using System.Text.Json.Serialization;
+
 namespace Application.DTOs
 {
     public class RecursoDTO
@@ -21,8 +23,11 @@ namespace Application.DTOs
         public int Prioridad { get; set; }
         public int Estado { get; set; }
         
-        // Propiedades helper
+        // Propiedades helper - JsonInclude para que se serialicen
+        [JsonInclude]
         public bool EstaVencida => Estado != 2 && FechaVencimiento.HasValue && DateTime.Now > FechaVencimiento.Value;
+        
+        [JsonInclude]
         public bool EsCritica => Estado != 2 && Prioridad == 2;
     }
 }

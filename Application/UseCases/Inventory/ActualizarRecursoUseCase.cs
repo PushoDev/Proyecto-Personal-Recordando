@@ -18,6 +18,12 @@ namespace Application.UseCases.Inventory
             if (recurso == null)
                 throw new KeyNotFoundException($"Recurso con ID {id} no encontrado");
 
+            // Actualizar estado si se envía (siempre)
+            if (request.Estado > 0 || request.Estado == 0)
+            {
+                recurso.Estado = request.Estado;
+            }
+
             // Si tiene stock significativo, es inventario
             if (recurso.Stock > 0 || recurso.CodigoCorto != null)
             {

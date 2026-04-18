@@ -23,6 +23,7 @@ export interface CreateRecursoRequest {
   umbralMinimo: number;
   fechaVencimiento?: string;
   prioridad: number;
+  estado?: number;
 }
 
 export interface DescontarStockRequest {
