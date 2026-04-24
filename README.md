@@ -37,6 +37,17 @@ Full-stack application with Clean Architecture demonstrating:
 - Secure password hashing
 - Token refresh and revocation
 
+## Screenshots
+
+### Backend API (Swagger)
+![API Swagger](./imgs/api-swangger.png)
+
+### Authentication (Login/Register)
+![Auth](./imgs/auth.png)
+
+### Dashboard Admin
+![Dashboard](./imgs/admin.png)
+
 ## Technology Stack
 
 ### Backend
